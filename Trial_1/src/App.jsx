@@ -6,7 +6,7 @@ class App extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            textData: [{text: 'something'}, {text: 'another thing to say'}, {text: 'blah blah blah'}, {text: 'words words words'}, {text: 'even more important things'}],
+            textData: [ 'something',  'another thing to say',  'blah blah blah',  'words words words',  'even more important things'],
         }
         this.alertWindow = this.alertWindow.bind(this);
     }
@@ -32,3 +32,7 @@ class App extends Component {
 
 export default App;
 
+
+
+//Things I changed:
+//

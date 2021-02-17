@@ -5,7 +5,6 @@ const TextComponent = ({someText, alertWindow}) => (
 
     <div>
       <h2>
-
         {someText.map((currentItem, i) =>
             <TextBox
                 func={alertWindow}
