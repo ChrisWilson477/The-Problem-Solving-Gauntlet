@@ -8,14 +8,14 @@ class App extends Component {
         this.state = {
             textData: ['something', 'another thing to say', 'blah blah blah', 'words words words', 'even more important things'],
         }
+        this.alertWindow = this.alertWindow.bind(this);
     }
 
     componentDidMount() {
-        this.alertWindow('danger, danger Will Robinson!!!');
+        this.alertWindow;
     }
 
     alertWindow(text) {
-
         alert(text);
     }
 
@@ -23,7 +23,7 @@ class App extends Component {
         return (
             <div className="textCompContainer">
                 <h1 className="textCompHeaderText">This app will alert some text</h1>
-                <TextComponent someText={this.state.textData} alertWindow={this.alertWindow('danger, danger Will Robinson!')} />
+                <TextComponent someText={this.state.textData} alertWindow={this.alertWindow} />
             </div>
         )
     }
