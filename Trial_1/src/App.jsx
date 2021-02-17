@@ -35,4 +35,17 @@ export default App;
 
 
 //Things I changed:
-//
+//index.html -----
+//'root' is in a body tag, needs to be in  a div tag inside the body
+//App.jsx -----
+//Bind the alertWindow function
+//Remove the template text in it
+//change alertWindow being passed to TextComponent
+//Textbox.jsx -----
+// change the props.func() to () => func(text)
+//put props.text in brackets (or just text if you remove props)
+//TextComponent
+//must remove brackets for arrow function because only returns one line
+//fix text = to just be currentItem
+//webpack -----
+//remove the exclusion of node modules on webpack

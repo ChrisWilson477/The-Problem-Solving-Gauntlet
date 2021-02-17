@@ -1,8 +1,8 @@
 import React from 'react';
 import TextBox from './TextBox.jsx';
 
-const TextComponent = ({someText, alertWindow}) => (
-
+const TextComponent = ({someText, alertWindow}) => {
+  return (
     <div>
       <h2>
         {someText.map((currentItem, i) =>
@@ -14,6 +14,6 @@ const TextComponent = ({someText, alertWindow}) => (
         )}
       </h2>
     </div>
-  );
+  )};
 
 export default TextComponent;
